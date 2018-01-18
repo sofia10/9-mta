@@ -1,0 +1,32 @@
+@mixin h4(){
+	font-size: 39px;
+	color: #FFF;
+}
+@mixin h3(){
+	font-size: 46px;
+	color: #212121;
+	text-align: center;
+}
+@mixin p(){
+	font-size: 16px;
+	color: #4D4D4D;
+}
+@mixin h5(){
+	font-size: 44px;
+	color: #212121;
+}
+@mixin box-shadow-left(){
+	-webkit-box-shadow: -17px 17px 0px 0px #D2D2D2;
+	-moz-box-shadow: -17px 17px 0px 0px #D2D2D2;
+	box-shadow: -17px 17px 0px 0px #D2D2D2;
+}
+@mixin shadow-news-left(){
+	-webkit-box-shadow: -13px 13px 0px 0px #D2D2D2;
+	-moz-box-shadow: -13px 13px 0px 0px #D2D2D2;
+	box-shadow: -13px 13px 0px 0px #D2D2D2;
+}
+@mixin shadow-news-right(){
+	-webkit-box-shadow: 13px 13px 0px 0px #D2D2D2;
+	-moz-box-shadow: 13px 13px 0px 0px #D2D2D2;
+	box-shadow: 13px 13px 0px 0px #D2D2D2;
+}

@@ -1,0 +1,344 @@
+@import "fonts.ge.scss";
+// fonts
+h2{
+	font-family: $le-studio;
+}
+h3{
+	font-family: $le-studio;
+}
+h4{
+	font-family: $le-studio;
+}
+h5{
+	font-family: $le-studio;
+}
+h6{
+	font-family: $le-studio;
+}
+p{
+	font-family: $helvetica-roman;
+}
+.header-bg{
+	.selectpicker{
+		font-family: $le-studio;
+	}
+	.col-lg-6{
+		a{
+			font-family: $le-studio;
+		}
+	}
+	.user-icons{
+		span{
+			font-family: $le-studio;
+		}
+	}
+}
+.beer-title{
+	span{
+		font-family: $le-studio;
+	}
+}
+.beer-info{
+	span{
+		font-family: $le-studio;
+	}
+}
+.brewery{
+	a{
+		font-family: $le-studio;
+	}
+}
+.news{
+	.col-md-10{
+		span{
+			font-family: $le-studio;
+		}
+	}
+	.circle{
+		span{
+			font-family: $le-studio;
+		}
+	}
+}
+.location{
+	span{
+		font-family: $le-studio;
+	}
+}
+.footer-menu{
+	a{
+		font-family: $le-studio;
+	}
+}
+.contact{
+	a{
+		font-family: $le-studio;
+	}
+	input{
+		font-family: $le-studio;
+	}
+}
+.sup-footer{
+	.row{
+		span{
+			font-family: $le-studio;
+		}
+	}
+}
+.sub-footer{
+    span{
+		font-family: $helvetica-roman;
+    }
+}
+.news-menu{
+	a{
+		font-family: $le-studio;
+	}
+}
+.news{
+    .news-title{
+		a{
+			font-family: $le-studio;
+		}
+    }
+}
+.product{
+	span{
+		font-family: $le-studio;
+	}
+}
+.share{
+    span{
+		font-family: $le-studio;
+    }
+}
+.player{
+	a.video{
+		font-family: $le-studio;
+	}
+}
+.read-more{
+	a{
+		font-family: $le-studio;
+	}
+}
+.pagination{
+	a{
+		font-family: $le-studio;
+	}
+}
+.wrapper-dropdown-3{
+	font-family: $josefin-reg;
+}
+.news-title{
+	nav{
+		a{
+			font-family: $helvetica-roman;
+		}
+	}
+}
+.team{
+    .member-name,
+    .member-info{
+		font-family: $le-studio;
+    }
+    .post{
+		font-family: $le-studio;
+    }
+}
+.partner-desc{
+    span,
+    p{
+		font-family: $le-studio;
+    }
+}
+.history-title{
+	font-family: $le-studio;
+}
+.more-info{
+	.text{
+		p{
+			font-family: $le-studio;
+		}
+	}
+}
+.num-line{
+	span{
+		font-family: $le-studio;
+	}
+}
+.contact-icons{
+	span{
+		font-family: $le-studio;
+	}
+}
+.inputs{
+	input{
+		font-family: $le-studio;
+	}
+}
+.cont-text{
+    textarea{
+		font-family: $le-studio;
+    }
+    input[type=submit]{
+		font-family: $le-studio;
+    }
+}
+.account-menu{
+	a{
+		span{
+			font-family: $le-studio;
+		}
+	}
+}
+.acc-title{
+    span, a{
+		font-family: $le-studio;
+    }
+}
+.information{
+    label{
+		font-family: $helvetica-roman;
+    }
+    input{
+		font-family: $helvetica-roman;
+    }
+    textarea{
+		font-family: $helvetica-roman;
+    }
+}
+.modal-btn{
+	font-family: $le-studio;
+}
+.beer-name, .categ, .beer-size, .price{
+	font-family: $le-studio;
+}
+.order{
+	.scroll{
+		.text-right{
+			font-family: $le-studio;
+		}
+	}
+}
+.full-price{
+	font-family: $le-studio;
+}
+.orders{
+	font-family: $le-studio;
+}
+td.title, td.product-price{
+	font-family: $le-studio;
+}
+.qty input{
+	font-family: $le-studio;
+}
+.continue{
+	span, a{
+		font-family: $le-studio;
+	}
+}
+.cart-btn{
+	a{
+		font-family: $le-studio;
+	}
+}
+.style-cart{
+	span{
+		font-family: $le-studio;
+	}
+	p{
+		font-family: $helvetica-roman;
+	}
+}
+.left-beers{
+	span{
+		font-family: $le-studio;
+	}
+}
+.right-beers{
+	h3{
+		font-family: $le-studio;
+	}
+	p{
+		font-family: $helvetica-roman;
+	}
+}
+.beers{
+    span{
+		font-family: $le-studio;
+    }
+}
+.full-shop{
+	p{
+		font-family: $helvetica-roman;
+	}
+}
+#deleteModal{
+	span, a{
+		font-family: $helvetica-roman;
+	}
+}
+.slider-btm{
+	font-family: $le-studio;
+}
+.quantity-bottle{
+	font-family: $le-studio;
+}
+.beer-item{
+	font-family: $le-studio;
+}
+.shop-icons{
+	font-family: $helvetica-roman;
+}
+.see-beer{
+	font-family: $le-studio;
+}
+.name-br,
+.ctgr-br,
+span
+.size,
+.price{
+	font-family: $le-studio;
+}
+.ctgr-br{
+	font-family: $helvetica-roman;
+}
+.dropdown{
+    span, button, a{
+		font-family: $le-studio;
+    }
+    button{
+		font-family: $helvetica-roman;
+    }
+}
+.list-group {
+	.title-list{
+		font-family: $le-studio;
+	}
+	a, label{
+		font-family: $helvetica-roman;
+	}
+}
+.locations-beer{
+	span,a{
+		font-family: $le-studio;
+	}
+}
+.events{
+	.col-lg-9{
+		span{
+			font-family: $le-studio;
+		}
+	}
+}
+.rotated-title{
+	h4{
+		font-family: 'Josefin Sans-semi';
+	}
+}
+.user-icons{
+	span{
+		font-family: $le-studio;
+	}
+}

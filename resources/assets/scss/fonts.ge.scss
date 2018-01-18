@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'BPG LE Studio 02 Caps';
+    src: url('../fonts/bpg-le-studio-02-caps-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/bpg-le-studio-02-caps-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/bpg-le-studio-02-caps-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/bpg-le-studio-02-caps-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/bpg-le-studio-02-caps-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/bpg-le-studio-02-caps-webfont.svg#bpg_le_studio_02_capsregular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT GEO 55 Roman';
+    src: url('../fonts/HelveticaNeueLTGEO-55Roman.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueLTGEO-55Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans.woff2') format('woff2'),
+        url('../fonts/JosefinSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Josefin Sans-semi';
+    src: url('../fonts/JosefinSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/JosefinSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+$le-studio: 'BPG LE Studio 02 Caps';
+$josefin-reg: 'Josefin Sans';
+$josefin-semi: 'Josefin Sans-semi';
+$helvetica-roman: 'Helvetica Neue LT GEO 55 Roman';

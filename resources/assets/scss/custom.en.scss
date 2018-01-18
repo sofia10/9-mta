@@ -1,0 +1,329 @@
+@import "fonts.en.scss";
+// fonts
+h2{
+	font-family: $josefin-bold;
+}
+h3{
+	font-family: $josefin-bold;
+}
+h4{
+	font-family: $josefin-semi;
+}
+h5{
+	font-family: $josefin-bold;
+}
+h6{
+	font-family: $josefin-reg;
+}
+p{
+	font-family: $helvetica-roman;
+}
+.header-bg{
+	.selectpicker{
+		font-family: $josefin-reg;
+	}
+	.col-lg-6{
+		a{
+			font-family: $josefin-reg;
+		}
+	}
+	.user-icons{
+		span{
+			font-family: $josefin-reg;
+		}
+	}
+}
+.beer-title{
+	span{
+		font-family: $josefin-semi;
+	}
+}
+.beer-info{
+	span{
+		font-family: $josefin-bold;
+	}
+}
+.brewery{
+	a{
+		font-family: $josefin-reg;
+	}
+}
+.news{
+	.col-md-10{
+		span{
+			font-family: $josefin-semi;
+		}
+	}
+	.circle{
+		span{
+			font-family: $josefin-semi;
+		}
+	}
+}
+.location{
+	span{
+		font-family: $josefin-reg;
+	}
+}
+.footer-menu{
+	a{
+		font-family: $josefin-reg;
+	}
+}
+.contact{
+	a{
+		font-family: $josefin-reg;
+	}
+	input{
+		font-family: $helvetica-roman;
+	}
+}
+.sup-footer{
+	.row{
+		span{
+			font-family: $josefin-bold;
+		}
+	}
+}
+.sub-footer{
+    span{
+		font-family: $helvetica-roman;
+    }
+}
+.news-menu{
+	a{
+		font-family: $josefin-semi;
+	}
+}
+.news{
+    .news-title{
+		a{
+			font-family: $josefin-bold;
+		}
+    }
+}
+.product{
+	span{
+		font-family: $josefin-bold;
+	}
+}
+.share{
+    span{
+		font-family: $josefin-semi;
+    }
+}
+.player{
+	a.video{
+		font-family: $josefin-semi;
+	}
+}
+.read-more{
+	a{
+		font-family: $josefin-bold;
+	}
+}
+.pagination{
+	a{
+		font-family: $josefin-reg;
+	}
+}
+.wrapper-dropdown-3{
+	font-family: $josefin-reg;
+}
+.news-title{
+	nav{
+		a{
+			font-family: $josefin-bold;
+		}
+	}
+}
+.team{
+    .member-name,
+    .member-info{
+		font-family: $josefin-bold;
+    }
+    .post{
+		font-family: $josefin-reg;
+    }
+}
+.partner-desc{
+    span,
+    p{
+		font-family: $josefin-bold;
+    }
+}
+.history-title{
+	font-family: $josefin-bold;
+}
+.more-info{
+	.text{
+		p{
+			font-family: $josefin-bold;
+		}
+	}
+}
+.num-line{
+	span{
+		font-family: $josefin-semi;
+	}
+}
+.contact-icons{
+	span{
+		font-family: $josefin-bold;
+	}
+}
+.inputs{
+	input{
+		font-family: $josefin-reg;
+	}
+}
+.cont-text{
+    textarea{
+		font-family: $josefin-reg;
+    }
+    input[type=submit]{
+		font-family: $josefin-bold;
+    }
+}
+.account-menu{
+	a{
+		span{
+			font-family: $josefin-bold;
+		}
+	}
+}
+.acc-title{
+    span, a{
+		font-family: $josefin-bold;
+    }
+}
+.information{
+    label{
+		font-family: $helvetica-roman;
+    }
+    input{
+		font-family: $helvetica-roman;
+    }
+    textarea{
+		font-family: $helvetica-roman;
+    }
+}
+.modal-btn{
+	font-family: $josefin-bold;
+}
+.beer-name, .categ, .beer-size, .price{
+	font-family: $josefin-bold;
+}
+.order{
+	.scroll{
+		.text-right{
+			font-family: $josefin-bold;
+		}
+	}
+}
+.full-price{
+	font-family: $josefin-bold;
+}
+.orders{
+	font-family: $josefin-bold;
+}
+td.title, td.product-price{
+	font-family: $josefin-bold;
+}
+.qty input{
+	font-family: $josefin-reg;
+}
+.continue{
+	span, a{
+		font-family: $josefin-bold;
+	}
+}
+.cart-btn{
+	a{
+		font-family: $josefin-bold;
+	}
+}
+.style-cart{
+	span{
+		font-family: $josefin-bold;
+	}
+	p{
+		font-family: $helvetica-roman;
+	}
+}
+.left-beers{
+	span{
+		font-family: $josefin-reg;
+	}
+}
+.right-beers{
+	h3{
+		font-family: $josefin-bold;
+	}
+	p{
+		font-family: $helvetica-roman;
+	}
+}
+.beers{
+    span{
+		font-family: $josefin-bold;
+    }
+}
+.full-shop{
+	p{
+		font-family: $helvetica-roman;
+	}
+}
+#deleteModal{
+	span, a{
+		font-family: $helvetica-roman;
+	}
+}
+.slider-btm{
+	font-family: $josefin-bold;
+}
+.quantity-bottle{
+	font-family: $josefin-bold;
+}
+.beer-item{
+	font-family: $josefin-bold;
+}
+.shop-icons{
+	font-family: $helvetica-roman;
+}
+.see-beer{
+	font-family: $josefin-bold;
+}
+.name-br,
+.ctgr-br,
+span
+.size,
+.price{
+	font-family: $josefin-bold;
+}
+.dropdown{
+    span, button, a{
+		font-family: $josefin-bold;
+    }
+}
+.list-group {
+	.title-list{
+		font-family: $josefin-bold;
+	}
+	a,
+	label{
+		font-family: $josefin-semi;
+	}	
+}
+.locations-beer{
+	span,a{
+		font-family: $josefin-bold;
+	}
+}
+.events{
+	.col-lg-9{
+		span{
+			font-family: $josefin-semi;
+		}
+	}
+}

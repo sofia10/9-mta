@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/JosefinSans.woff2') format('woff2'),
+        url('../fonts/JosefinSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Josefin Sans-bold';
+    src: url('../fonts/JosefinSans-Bold.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Sans-semi';
+    src: url('../fonts/JosefinSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/JosefinSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue LT GEO 55 Roman';
+    src: url('../fonts/HelveticaNeueLTGEO-55Roman.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueLTGEO-55Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$josefin-reg: 'Josefin Sans';
+$josefin-bold: 'Josefin Sans-bold';
+$josefin-semi: 'Josefin Sans-semi';
+$helvetica-roman: 'Helvetica Neue LT GEO 55 Roman';
