@@ -270,6 +270,7 @@ nav.burgher{
                     padding: 15px;
                     display: flex;
                     opacity: 0;
+                    visibility: hidden;
                     position: absolute;
                     top: 80px;
                     left: 50px;
@@ -298,6 +299,9 @@ nav.burgher{
                         font-size: 30px;
                     }
                 } 
+                a.active{
+                    color: $green;
+                }
                 a{
                     color: #FFF;
                     font-size: 15px;
@@ -331,6 +335,7 @@ nav.burgher{
                 &:hover{
                     .hidden-menu{
                         opacity: 1;
+                        visibility: visible;
                     }
                 }
             }
@@ -2229,6 +2234,9 @@ footer{
         font-size: 20px;
         margin-left: 20px;
         color: #6E6E6E;
+        @media (max-width: 1600px){
+            margin-left: 5px;
+        }
     }
     .min, .plus{
         font-size: 25px;
@@ -3010,6 +3018,10 @@ footer{
                             &:hover{
                                 color: $green;
                                 background-color: #FFF;
+                            }
+                            @media (max-width: 450px){
+                                font-size: 11px;
+                                padding: 8px 14px;
                             }
                         }
                         @media (max-width: 1370px){
