@@ -114,7 +114,7 @@
                                     </li>
                                     <li><a href="#!" class="link-1">BARS</a></li>
                                     <li><a href="#!" class="link-1">CRAFT BEER</a></li>
-                                    <li><a href="#!" class="link-1 active">PRESS ROOM</a></li>
+                                    <li><a href="#!" class="link-1">PRESS ROOM</a></li>
                                     <li><a href="#!" class="link-1">ABOUT US</a></li>
                                     <li><a href="#!" class="link-1">SHOP</a></li>
                                 </ul>
@@ -166,10 +166,40 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 grid-padding"><img src="public/files/grid4.png" class="left-pad"></div>
-                                        <div class="col-md-6 grid-padding"><img src="public/files/grid5.png" class="col-left"></div>
+                                        <div class="col-md-6 grid-padding">
+                                            <div class="grid-hover" onclick="openModal();currentSlide(1)">
+                                                <span>+ 4</span> 
+                                            </div>
+                                            <div class="last-gridimg" >
+                                                <img src="public/files/grid5.png" class="col-left">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>         
+                            </div> 
+                            <div id="myModal1" class="modal1">
+                                <span class="close cursor" onclick="closeModal()">&times;</span>
+                                <div class="modal-content">
+                                    <div class="mySlides">
+                                        <div class="numbertext">1 / 4</div>
+                                        <img src="public/files/grid4.png" style="width:100%">
+                                    </div>
+                                    <div class="mySlides">
+                                        <div class="numbertext">2 / 4</div>
+                                        <img src="public/files/grid1.png" style="width:100%">
+                                    </div>
+                                    <div class="mySlides">
+                                        <div class="numbertext">3 / 4</div>
+                                        <img src="public/files/grid2.png" style="width:100%">
+                                    </div>
+                                        <div class="mySlides">
+                                        <div class="numbertext">4 / 4</div>
+                                    <img src="public/files/grid3.png" style="width:100%">
+                                    </div>
+                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                </div>
+                            </div>          
                         </div>
                         <div class="aboutus">
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -254,5 +284,43 @@
         <script src="public/assets/site/plugins/popper/js/popper.min.js"></script>
         <script src="public/assets/site/plugins/bootstrap/js/bootstrap.min.js"></script>
         <script src="public/assets/site/layout/js/global.js"></script>
+        <script>
+            function openModal() {
+              document.getElementById('myModal1').style.display = "block";
+            }
+
+            function closeModal() {
+              document.getElementById('myModal1').style.display = "none";
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
     </body>
 </html>

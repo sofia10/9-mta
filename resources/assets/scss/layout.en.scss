@@ -261,6 +261,9 @@ nav.burgher{
     }
     .col-lg-6{
         .row{
+            .link-1{
+                position: relative;
+            }
             li{
                 margin-right: 30px;
                 @media (max-width: 1650px){
@@ -273,7 +276,7 @@ nav.burgher{
                     visibility: hidden;
                     position: absolute;
                     top: 80px;
-                    left: 50px;
+                    z-index: 5;
                     background-color: #FFFFFF;
                     transition: all 0.2s ease-in-out;
                     -webkit-transition: all 0.2s ease-in-out;
@@ -282,6 +285,7 @@ nav.burgher{
                         padding: 10px;
                         a{
                             color: #6E6E6E;
+                            padding: 0;
                         }
                     }
                     li{
@@ -294,14 +298,11 @@ nav.burgher{
                         font-family: FontAwesome;
                         color: #FFF;
                         position: absolute;
-                        left: 135px;
+                        left: 30px;
                         top: -12px;
                         font-size: 30px;
                     }
                 } 
-                a.active{
-                    color: $green;
-                }
                 a{
                     color: #FFF;
                     font-size: 16px;
@@ -336,6 +337,21 @@ nav.burgher{
                     .hidden-menu{
                         opacity: 1;
                         visibility: visible;
+                    }
+                }
+                @media (max-width: 1921px){
+                    margin-right: 15px;
+                }
+                @media (max-width: 1690px){
+                    a{
+                        padding: 6px;
+                    }
+                }
+                @media (max-width: 1285px){
+                    margin-right: 5px;
+                    a{
+                        padding: 5px;
+                        font-size: 13px;
                     }
                 }
             }
@@ -668,7 +684,8 @@ section.craft-b{
                 border-radius: 35px;
                 padding: 15px 40px; 
                 &:hover{
-                    opacity: 0.7;
+                    border: 1px solid $green;
+                    color: $green;
                 }
                 @media (max-width: 530px){
 
@@ -738,6 +755,18 @@ section.events{
                 }
                 @media (max-width: 767px){
                     flex-direction: column;
+                }
+            }
+            a{
+                &:hover{
+                    .circle{
+                        /*border-color: $green!important;*/
+                    }
+                     .col-lg-9{
+                        span{
+                            color: #707070!important;
+                        }
+                    }
                 }
             }
         }  
@@ -850,7 +879,7 @@ footer{
             }
         }
         .footer-icons{
-            margin-top: 40px;
+            margin-top: 30px;
             li{
                 margin-right: 15px;
                 a{
@@ -878,6 +907,9 @@ footer{
                 a.subscribe{
                     font-size: 16px;
                     color: $green;
+                    &:hover{
+                        opacity: 0.8;
+                    }
                     @media (max-width: 1024px){
                         font-size: 15px;
                     }
@@ -1069,7 +1101,10 @@ footer{
                 font-size: 12px;
                 color: #676767;
                 &:hover{
-                    color: #212121;
+                    color: #000;
+                    a{
+                        color: #000;
+                   }
                 }
             }
             i.fa-angle-left{
@@ -1243,6 +1278,19 @@ footer{
                 margin-right: 20px;
             }
         }
+        .news-more{
+            .arrow-green{
+                display: none;
+            }
+            &:hover{
+                .arrow-green{
+                    display: inline-block;
+                }
+                .arrow-grey{
+                    display: none;
+                }
+            }
+        }
         .left-news,
         .right-news{
             width: 95%;
@@ -1339,11 +1387,126 @@ footer{
             margin-top: 4px;
         }
     }
+    .modal1 {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background: rgba(0,0,0,.9);
+    }
+
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    /* The Close Button */
+    .close {
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 55px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #999;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .cursor {
+      cursor: pointer
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white!important;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    img {
+      margin-bottom: -4px;
+    }
+
+    .caption-container {
+      text-align: center;
+      background-color: black;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+
+    img.hover-shadow {
+      transition: 0.3s
+    }
+
+    .hover-shadow:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
 }
 .aboutus{
     margin-top: 70px;
     p{
         font-size: 18px;
+        line-height: 18px;
         color: #707070;
         margin-bottom: 40px;
     }
@@ -1369,7 +1532,8 @@ footer{
                 margin-bottom: 30px;
             }
             .member-info{
-                font-size: 14px;
+                font-size: 16px;
+                line-height: 20px;
                 color: #959595;
                 text-align: left;
             }
@@ -1410,6 +1574,7 @@ footer{
                 }
                 p{
                     font-size: 14px;
+                    line-height: 18px;
                     color: #959595;
                     text-align: left;
                 }
@@ -1423,6 +1588,13 @@ footer{
                 }
                 .partner-desc{
                     padding: 0;
+                }
+            }
+            &:hover{
+                .partner-desc{
+                    span{
+                        color: #707070;
+                    }
                 }
             }
         }
@@ -1498,7 +1670,8 @@ footer{
                 .text{
                     padding-left: 20px;
                     p{
-                        font-size: 14px;
+                        font-size: 16px;
+                        line-height: 20px;
                         color: #707070;
                     }
                     @media (max-width: 991px){
@@ -1586,7 +1759,7 @@ footer{
         justify-content: center;
         flex-wrap: wrap;
         margin: 0 auto;
-        margin-top: 80px;
+        margin-top: 0px;
         .contact-left{
             .contact-icons{
                 margin-bottom: 30px;
@@ -1671,6 +1844,9 @@ footer{
         @media (max-width: 767px){
             flex-direction: column;
         } 
+    }
+    .contact-form{
+        margin-top: 50px;
     }
     .find-beers{
         margin-top: 50px;
@@ -1840,7 +2016,7 @@ footer{
                     }
                     &:hover{
                         i{
-                            margin-right: 30px;
+                            margin-right: 40px;
                         }
                     }
                 }
@@ -1929,9 +2105,6 @@ footer{
                     i{
                         color: #C8C8C8;
                         cursor: pointer;
-                        &:hover{
-                            color: #000;
-                        }
                     }
                     i.fa-pencil.text-right{
                         @media (max-width: 767px){
@@ -2170,6 +2343,7 @@ footer{
                 margin-top: 45px;
                 color: #959595;
                 font-size: 16px;
+                line-height: 20px;
             }
         }
         @media (max-width: 480px){
@@ -2526,7 +2700,7 @@ footer{
             border-bottom-style: solid;
             border-bottom-width: 4px;
             display:table-cell;
-            width:110px;
+            width:100px;
             padding-top: 15px;
         }
     }
@@ -2571,6 +2745,7 @@ footer{
         }
         p{
             font-size: 16px;
+            line-height: 20px;
             color: #6E6E6E;
         }
         .shop-icons{
@@ -2580,8 +2755,8 @@ footer{
                 background-image: url(../images/shop-icons.png);
                 background-repeat: no-repeat;
                 background-size: auto;
-                width: 43px;
-                height: 43px;
+                width: 45px;
+                height: 45px;
                 padding-left: 60px;
                 span{
                     color: #6E6E6E;
@@ -3018,6 +3193,34 @@ footer{
             }
         }
     }
+}
+.value-hide{
+    border: 1px solid #DCDCDC!important;
+    height: 30px;
+    &:focus{
+        border-color: $green!important;
+    }
+}
+.grid-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: rgba(0,0,0,.6);
+    margin-left: 4px;
+    padding-right: 40px;
+    span{
+        margin-left: -4px;
+        color: #FFF;
+        font-size: 50px;
+    }
+}
+.last-gridimg{
+    cursor: pointer;
 }
 @media (max-width: 736px) and (orientation: landscape){
     .ctlg-beer{
