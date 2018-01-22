@@ -3224,6 +3224,15 @@ footer{
 .last-gridimg{
     cursor: pointer;
 }
+.swiper-shadow-box{
+    margin: 0px 10px;
+}
+.swiper-slide:hover{
+    box-shadow: none !important;
+}
+.swiper-slide:hover .swiper-shadow-box{
+    box-shadow: 1px 1px 4px #000;
+}
 /*header responsive*/
 @media (max-width: 1645px){
     .header-bg{

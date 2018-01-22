@@ -2605,6 +2605,15 @@ footer{
             background-image: initial;
         }
     }
+    .swiper-shadow-box{
+        margin: 0px 10px!important;
+    }
+    .swiper-slide:hover{
+        box-shadow: none !important;
+    }
+    .swiper-slide:hover .swiper-shadow-box{
+        box-shadow: 1px 1px 4px #000!important;
+    }
 }
 .hide-title{
     @include h3();
@@ -3221,6 +3230,15 @@ footer{
 }
 .last-gridimg{
     cursor: pointer;
+}
+.swiper-shadow-box{
+    margin: 0px 10px;
+}
+.swiper-slide:hover{
+    box-shadow: none !important;
+}
+.swiper-slide:hover .swiper-shadow-box{
+    box-shadow: 1px 1px 4px #000;
 }
 @media (max-width: 736px) and (orientation: landscape){
     .ctlg-beer{

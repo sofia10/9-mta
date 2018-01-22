@@ -393,6 +393,16 @@
               }
 
             };
+
+
+            var contentString = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<h1 id="firstHeading" class="firstHeading">სათაური</h1>'+
+                '<div id="bodyContent">'+
+                '<p>მისამართი ';
+
+
             // koordinatebi
             var features = [
              {
@@ -409,6 +419,10 @@
                 type: 'img4'
               }
             ];
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
             // Create markers.
             features.forEach(function(feature) {
               var marker = new google.maps.Marker({
@@ -416,7 +430,11 @@
                 icon: icons[feature.type].icon,
                 map: map
               });
+                marker.addListener('click', function() {
+                    infowindow.open(map, marker);
+                });
             });
+
           }
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsoF1yBpQMNBQy8DpwIJkhFnYTJBTG2_Y&callback=initMap"

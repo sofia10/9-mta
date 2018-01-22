@@ -262,70 +262,78 @@
                         <div class="swiper-container s2">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <a href="#!">
-                                        <div class="beer-9mta d-flex justify-content-center ">
-                                            <img src="public/files/slider-beer.png">
-                                        </div>
-                                        <div class="slider-btm d-flex justify-content-between">
-                                            <div class="descr d-flex flex-column">
-                                                <span>PALE ALE</span>
-                                                <span>Light Beer</span>
+                                    <div class="swiper-shadow-box">
+                                        <a href="#!">
+                                            <div class="beer-9mta d-flex justify-content-center ">
+                                                <img src="public/files/slider-beer.png">
                                             </div>
-                                            <span class="read-more">READ MORE</span>
-                                        </div>
-                                    </a>
+                                            <div class="slider-btm d-flex justify-content-between">
+                                                <div class="descr d-flex flex-column">
+                                                    <span>PALE ALE</span>
+                                                    <span>Light Beer</span>
+                                                </div>
+                                                <span class="read-more">READ MORE</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="#!">
-                                        <div class="beer-9mta d-flex justify-content-center ">
-                                            <img src="public/files/slider-beer.png">
-                                        </div>
-                                        <div class="slider-btm d-flex justify-content-between">
-                                            <div class="descr d-flex flex-column">
-                                                <span>PALE ALE</span>
-                                                <span>Light Beer</span>
+                                    <div class="swiper-shadow-box">
+                                        <a href="#!">
+                                            <div class="beer-9mta d-flex justify-content-center ">
+                                                <img src="public/files/slider-beer.png">
                                             </div>
-                                            <span class="read-more">READ MORE</span>
-                                        </div>
-                                    </a>
+                                            <div class="slider-btm d-flex justify-content-between">
+                                                <div class="descr d-flex flex-column">
+                                                    <span>PALE ALE</span>
+                                                    <span>Light Beer</span>
+                                                </div>
+                                                <span class="read-more">READ MORE</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="#!">
-                                        <div class="beer-9mta d-flex justify-content-center ">
-                                            <img src="public/files/slider-beer.png">
-                                        </div>
-                                        <div class="slider-btm d-flex justify-content-between">
-                                            <div class="descr d-flex flex-column">
-                                                <span>PALE ALE</span>
-                                                <span>Light Beer</span>
+                                    <div class="swiper-shadow-box">
+                                        <a href="#!">
+                                            <div class="beer-9mta d-flex justify-content-center ">
+                                                <img src="public/files/slider-beer.png">
                                             </div>
-                                            <span class="read-more">READ MORE</span>
-                                        </div>
-                                    </a>
+                                            <div class="slider-btm d-flex justify-content-between">
+                                                <div class="descr d-flex flex-column">
+                                                    <span>PALE ALE</span>
+                                                    <span>Light Beer</span>
+                                                </div>
+                                                <span class="read-more">READ MORE</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="#!">
-                                        <div class="beer-9mta d-flex justify-content-center ">
-                                            <img src="public/files/slider-beer.png">
-                                        </div>
-                                        <div class="slider-btm d-flex justify-content-between">
-                                            <div class="descr d-flex flex-column">
-                                                <span>PALE ALE</span>
-                                                <span>Light Beer</span>
+                                    <div class="swiper-shadow-box">
+                                        <a href="#!">
+                                            <div class="beer-9mta d-flex justify-content-center ">
+                                                <img src="public/files/slider-beer.png">
                                             </div>
-                                            <span class="read-more">READ MORE</span>
-                                        </div>
-                                    </a>
+                                            <div class="slider-btm d-flex justify-content-between">
+                                                <div class="descr d-flex flex-column">
+                                                    <span>PALE ALE</span>
+                                                    <span>Light Beer</span>
+                                                </div>
+                                                <span class="read-more">READ MORE</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Add Pagination -->
                             <div class="swiper-pagination"></div>
-                            <!-- <div class="swiper-button-next">
-                                <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+                            <div class="swiper-button-next" style="right: -30px">
+                                <!-- <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i> -->
                             </div>
-                            <div class="swiper-button-prev">
-                                <i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>
-                            </div> -->
+                            <div class="swiper-button-prev" style="left: -30px">
+                                <!-- <i class="fa fa-angle-left fa-3x" aria-hidden="true"></i> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -448,15 +456,23 @@
             var swiperS2 = new Swiper('.s2', {
                 slidesPerView: 3,
                 spaceBetween: 30,
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
+                // autoplay: {
+                //     delay: 2500,
+                //     disableOnInteraction: false,
+                // },
+                navigation:{
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
                 },
                 pagination: {
                     el: '.s2 .swiper-pagination',
                     clickable: true,
                 },
                 breakpoints: {
+                    1199: {
+                      slidesPerView: 3,
+                      spaceBetween: 30,
+                    },
                     991: {
                       slidesPerView: 2,
                       spaceBetween: 20,
