@@ -2944,11 +2944,7 @@ footer{
             padding: 5px;
             padding-right: 5px;
             .swiper-slide{
-                &:hover{
-                    -webkit-box-shadow: 0px 0px 15px 0px #B9B6B6;
-                    -moz-box-shadow: 0px 0px 15px 0px #B9B6B6;
-                    box-shadow: 0px 0px 15px 0px #B9B6B6;
-                }
+                
                 .beer-9mta{
                     padding: 45px 0; 
                 }
@@ -3238,7 +3234,65 @@ footer{
     box-shadow: none !important;
 }
 .swiper-slide:hover .swiper-shadow-box{
-    box-shadow: 1px 1px 4px #000;
+    -webkit-box-shadow: 0px 0px 15px 0px #B9B6B6;
+    -moz-box-shadow: 0px 0px 15px 0px #B9B6B6;
+    box-shadow: 0px 0px 15px 0px #B9B6B6;
+}
+.swiper-button-next, .swiper-button-prev{
+    background-image: none;
+    i{
+        color: $green;
+    }
+    @media (max-width: 1200px){
+        display: none;
+    }
+}
+.info-win{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .firstHeading{
+        font-size: 25px;
+        margin-top: 15px;
+        color: #656565;
+    }
+    #bodyContent{
+        p{
+            font-size: 14px;
+            margin-top: 10px;
+            margin-left: -20px;
+            color: #656565;
+        }
+    }
+}
+.add-animate-content{
+    position: relative;
+}
+.cart-animation{
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: $green;
+    display: none;
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+}
+.cart-animation-class{
+    animation: cartAnimate 1s linear 1;   
+}
+@keyframes cartAnimate{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -400px;
+    }
 }
 @media (max-width: 736px) and (orientation: landscape){
     .ctlg-beer{

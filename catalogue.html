@@ -32,31 +32,6 @@
         <link type="text/css" rel="stylesheet" href="public/assets/site/plugins/bootstrap/css/bootstrap.min.css">
         <link type="text/css" rel="stylesheet" href="public/assets/site/plugins/fontawesome/css/font-awesome.min.css">
         <link type="text/css" rel="stylesheet" href="public/assets/site/layout/css/layout.en.css">
-        <style type="text/css">
-            .add-animate-content{
-                position: relative;
-            }
-            .cart-animation{
-                position: absolute;
-                right: 0;
-                top: 0;
-                width: 20px;
-                height: 20px;
-                background: red;
-                display: none;
-            }
-            .cart-animation-class{
-                animation: cartAnimate 1s linear 1;   
-            }
-            @keyframes cartAnimate{
-                0%{
-                    top: 0;
-                }
-                100%{
-                    top: -700px;
-                }
-            }
-        </style>
     </head>
     <body>
         <!-- responsive navbar  -->
@@ -466,7 +441,9 @@
                                                         <span class="price">4.70 GEL</span>
                                                     </div>
                                                     <div class="slider-btm d-flex justify-content-between add-animate-content" >
-                                                        <div class="cart-animation"></div>
+                                                        <div class="cart-animation">
+                                                            5
+                                                        </div>
                                                         <div class="beer-qty d-flex flex-column">
                                                             <div class="quantity" prod-price='6.50'>
                                                                 <span class="min">-</span>
@@ -602,7 +579,6 @@
             $('.animate_clicker').click(function(){
                 var target = $(this).closest('div').find('.cart-animation').fadeIn();
                 target.addClass('cart-animation-class');
-
             });
         </script>
     </body>

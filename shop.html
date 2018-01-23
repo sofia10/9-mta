@@ -383,8 +383,12 @@
                                 </div>
                         </div>
                         <!-- slider chevrons -->
-                        <div class="swiper-button-next"  style="right: -30px;"></div>
-                        <div class="swiper-button-prev" style="left: -30px;" ></div>
+                        <div class="swiper-button-next"  style="right: -30px;">
+                            <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i> 
+                        </div>
+                        <div class="swiper-button-prev" style="left: -30px;" >
+                            <i class="fa fa-angle-left fa-3x" aria-hidden="true"></i> 
+                        </div>
                     </div>
                 </div>
                 </div>
@@ -467,9 +471,6 @@
         <script src="public/assets/site/plugins/bootstrap/js/bootstrap.min.js"></script>
         <script src="public/assets/site/layout/js/global.js"></script>
         <script type="text/javascript">
-            $('.swiper-button-prev').click(function(){
-                console.log('here');
-            });
             var sum = 0;
             $('.plus').click(function(){
                 var qty = $(this).prev().find('input').val();
