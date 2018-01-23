@@ -18,6 +18,9 @@ a{
     text-decoration: none!important;
     color: #000;
 }
+p{
+    line-height: 20px;
+}
 h1, 
 h2, 
 h3, 
@@ -549,7 +552,8 @@ nav.burgher{
                     align-items: flex-end;
                     img.beer-bottle{
                         margin-left: 34px;
-                        /*margin-bottom: -30px;*/
+                        margin-bottom: 20px;
+                        width: 100px;
                     }
                     .arrow{
                         display: none;
@@ -589,7 +593,7 @@ nav.burgher{
                     }
                     img.beer-bottle{
                         width: 130px;
-                        margin-left: -10px;
+                        margin-left: 10px;
                     }
                 }
             }
@@ -897,6 +901,9 @@ footer{
                     color: $green;
                     @media (max-width: 1024px){
                         font-size: 15px;
+                    }
+                    &:hover{
+                        opacity: 0.8;
                     }
                 }
                 input{
@@ -1388,7 +1395,7 @@ footer{
       background-color: #fefefe;
       margin: auto;
       padding: 0;
-      width: 90%;
+      width: 50%;
       max-width: 1200px;
     }
 
@@ -3262,6 +3269,36 @@ footer{
             color: #656565;
         }
     }
+}
+.add-animate-content{
+    position: relative;
+}
+.cart-animation{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: $green;
+    display: none;
+    color: #FFF;
+    span{
+        margin-left: 0;
+        color: #FFF;
+        position: absolute;
+        font-size: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%,-50%,0);
+    }
+}
+.cart-animation-class{
+    animation: cartAnimate 1s linear 1;   
+}
+@keyframes cartAnimate{
+    0%   {top: 0px;}
+    100%  { background-color: #dfdfdf; top: -40px; display: none;}
 }
 /*header responsive*/
 @media (max-width: 1645px){

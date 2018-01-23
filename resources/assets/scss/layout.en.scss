@@ -558,7 +558,8 @@ nav.burgher{
                     align-items: flex-end;
                     img.beer-bottle{
                         margin-left: 34px;
-                        /*margin-bottom: -30px;*/
+                        margin-bottom: 20px;
+                        width: 100px;
                     }
                     .arrow{
                         display: none;
@@ -598,7 +599,7 @@ nav.burgher{
                     }
                     img.beer-bottle{
                         width: 130px;
-                        margin-left: -10px;
+                        margin-left: 10px;
                     }
                 }
             }
@@ -1406,7 +1407,7 @@ footer{
       background-color: #fefefe;
       margin: auto;
       padding: 0;
-      width: 90%;
+      width: 50%;
       max-width: 1200px;
     }
 
@@ -2662,8 +2663,8 @@ footer{
         }
     }
     .right-beers{
-        h3{
-            @include h3();
+        h5{
+            @include h5();
             position: absolute;
             top: -100px;
             @media (max-width: 992px){
@@ -3270,7 +3271,6 @@ footer{
     position: relative;
 }
 .cart-animation{
-    display: flex;
     position: absolute;
     right: 10px;
     top: 0;
@@ -3280,19 +3280,22 @@ footer{
     background: $green;
     display: none;
     color: #FFF;
-    justify-content: center;
-    align-items: center;
+    span{
+        margin-left: 0;
+        color: #FFF;
+        position: absolute;
+        font-size: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%,-50%,0);
+    }
 }
 .cart-animation-class{
     animation: cartAnimate 1s linear 1;   
 }
 @keyframes cartAnimate{
-    0%{
-        top: 0;
-    }
-    100%{
-        top: -400px;
-    }
+    0%   {top: 0px;}
+    100%  { background-color: #dfdfdf; top: -40px; display: none;}
 }
 @media (max-width: 736px) and (orientation: landscape){
     .ctlg-beer{

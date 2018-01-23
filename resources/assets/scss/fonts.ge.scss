@@ -29,8 +29,16 @@
     font-weight: 600;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Josefin Sans-bold';
+    src: url('../fonts/JosefinSans-Bold.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 
 $le-studio: 'BPG LE Studio 02 Caps';
 $josefin-reg: 'Josefin Sans';
+$josefin-bold: 'Josefin Sans-bold';
 $josefin-semi: 'Josefin Sans-semi';
 $helvetica-roman: 'Helvetica Neue LT GEO 55 Roman';
