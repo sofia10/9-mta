@@ -9,7 +9,6 @@ function DropDown(el) {
 DropDown.prototype = {
 	initEvents : function() {
 		var obj = this;
-
 		obj.dd.on('click', function(event){
 			$(this).toggleClass('active');
 			return false;
@@ -31,14 +30,11 @@ DropDown.prototype = {
 }
 
 $(function() {
-
 	var dd = new DropDown( $('#dd') );
-
 	$(document).click(function() {
 		// all dropdowns
 		$('.wrapper-dropdown-3').removeClass('active');
 	});
-
 });
 
 		
