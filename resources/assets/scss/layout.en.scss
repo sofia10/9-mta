@@ -39,6 +39,44 @@ body{
         max-width: 90%!important;
     }
 }
+.confirm{
+    .modal{
+        background-color: rgba(0,0,0,0.7);
+    }
+    .modal-header,
+    .modal-footer{
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .btn-confirm{
+            padding: 10px 20px;
+            border-radius: 18px;
+            color: #FFF;
+            font-size: 16px;
+            background-color: #222222;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        .continue-btn{
+            background-color: $green;
+        }
+    }
+    .modal-title{
+        font-size: 32px;
+        color: $green;
+    }
+    .modal-content{
+        padding: 30px;
+    }
+}
+.confirm-age{
+    display: none;
+}
 /*responsive*/
 nav.burgher{
     display: none;

@@ -42,6 +42,37 @@ body{
         max-width: 90%!important;
     }
 }
+.confirm{
+    .modal{
+        background-color: rgba(0,0,0,0.7);
+    }
+    .modal-header,
+    .modal-footer{
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .btn-primary{
+            border-radius: 18px;
+            color: #FFF;
+            font-size: 16px;
+            background-color: #222222;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .continue-btn{
+            background-color: $green;
+        }
+    }
+    .modal-title{
+        font-size: 32px;
+        color: $green;
+    }
+}
+.confirm-age{
+    display: none;
+}
 /*responsive*/
 nav.burgher{
     display: none;
