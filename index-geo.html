@@ -34,6 +34,29 @@
         <link type="text/css" rel="stylesheet" href="public/assets/site/layout/css/layout.ge.css">
     </head>
     <body>
+    	<div class="confirm">
+	        <button type="button" class="btn btn-primary confirm-age" data-toggle="modal" data-target="#exampleModalCenter">
+			  confirm age
+			</button>
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLongTitle">CONFIRM YOUR AGE</h5>
+			        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span> -->
+			        </button>
+			      </div>
+			      <div class="modal-footer">
+			        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+			        <button type="button" class="btn-confirm continue-btn" data-dismiss="modal">IM 18+ CONTINUE</button>
+			        <button type="button" class="btn-confirm" data-dismiss="modal">LEAVE SITE</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
         <!-- responsive navbar  -->
         <nav class="burgher">
             <input type="checkbox" id="nav" class="hidden"/>
@@ -383,5 +406,10 @@
         <script src="public/assets/site/plugins/popper/js/popper.min.js"></script>
         <script src="public/assets/site/plugins/bootstrap/js/bootstrap.min.js"></script>
         <script src="public/assets/site/layout/js/global.js"></script>
+        <script type="text/javascript">
+        	$(document).ready(function(){
+			    $('.confirm-age').click();
+			});
+        </script>
     </body>
 </html>
