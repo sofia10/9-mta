@@ -3116,12 +3116,46 @@ footer{
                         -webkit-box-shadow: 0px 0px 15px 0px #B9B6B6;
                         -moz-box-shadow: 0px 0px 15px 0px #B9B6B6;
                         box-shadow: 0px 0px 15px 0px #B9B6B6;
+                        .catalog-hover{
+                            display: block!important;
+                        }
+                        .beer-9mta{
+                            img{
+                                opacity: 0.4;
+                            }
+                        }
                     }
                     .beer-9mta{
                         padding: 53px 0 22px 0;
+                        position: relative;
                         img{
                             width: 62px;
                             height: 190px;
+                        }
+                        .catalog-hover{
+                            transition: 0.8s;
+                            display: none;
+                            position: absolute;
+                            width: 90%;
+                            height: 100%;
+                            top: 0;
+                            .hover-bg{
+                                transition: 0.8s;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 100%;
+                                height: 100%;
+                                left: 0;
+                                top: 0;
+                                /*background-color: rgba(0,0,0,0.1);*/
+                            }
+                            p{
+                                transition: 0.8s;
+                                text-align: center;
+                                @include p();
+                                color: #000;
+                            }
                         }
                     }
                     .top-descr{
