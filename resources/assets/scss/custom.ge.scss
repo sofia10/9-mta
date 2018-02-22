@@ -353,3 +353,25 @@ span
 .btn-primary{
 	font-family: $le-studio;
 }
+.login-item{
+	label{
+		font-family: $le-studio;
+	}
+	input{
+		font-family: $helvetica-roman;
+	}
+	input[type=submit]{
+		font-family: $le-studio;
+	}
+	.pass-forgot{
+		font-family: $helvetica-roman;
+	}
+}
+.acc-tab{
+	a{
+		font-family: $helvetica-roman;
+		&:last-child{
+			font-family: $le-studio;
+		}
+	}
+}

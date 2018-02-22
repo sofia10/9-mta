@@ -329,3 +329,25 @@ span
 .btn-primary{
 	font-family: $josefin-bold;
 }
+.login-item{
+	label{
+		font-family: $josefin-bold;
+	}
+	input{
+		font-family: $helvetica-roman;
+	}
+	input[type=submit]{
+		font-family: $josefin-bold;
+	}
+	.pass-forgot{
+		font-family: $helvetica-roman;
+	}
+}
+.acc-tab{
+	a{
+		font-family: $helvetica-roman;
+		&:last-child{
+			font-family: $josefin-bold;
+		}
+	}
+}

@@ -3394,6 +3394,101 @@ footer{
         }
     }
 }
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .login-content{
+        width: 500px;
+        margin-top: 60px;
+        border-top: 5px solid #6E6E6E;
+        background-color: #F1F1F1;
+        padding: 60px 30px 40px 30px;
+        .login-item{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #E3E3E3;
+            padding: 15px;
+            label{
+                color: #333333;
+                cursor: pointer;
+                margin: 0;
+            }
+            input{
+                border: none;
+                background-color: transparent;
+                color: #444444;
+            }
+            input[type=submit]{
+                padding: 10px 30px;
+                padding-top: 13px;
+                background-color: $green;
+                color: #FFF;
+                border:  1px solid $green;
+                outline: none;
+                cursor: pointer;
+                -webkit-border-radius: 18px;
+                -moz-border-radius: 18px;
+                border-radius: 18px;
+                transition: .4s;
+                &:hover{
+                    background-color: #FFF;
+                    color: $green;
+                }
+            }
+            .pass-forgot{
+                font-size: 14px;
+                color: #444444;
+                &:hover{
+                    color: $green;
+                }
+            }
+            &:last-child{
+                margin-top: 40px;
+                border: none;
+                padding: none;
+            }
+            @media (max-width: 520px){
+                flex-direction: column;
+                input, .pass-forgot{
+                    margin-top: 15px;
+                }
+            }
+        }
+        .register-pass{
+            margin-top: 30px;
+            margin-bottom: 50px;
+            background-color: #EFEFEF;
+        }
+        @media (max-width: 520px){
+            width: 350px;
+        }
+    }
+    .register-cont{
+        padding: 0;
+        padding-top: 60px;
+        .login-item{
+            margin: 0 15px;
+            padding-top: 20px;
+        }
+    }
+    .acc-tab{
+        width: 500px;
+        margin-top: 15px;
+        padding: 0 15px;
+        a{
+            font-size: 14px;
+            color: #444444;
+            &:hover{
+                color: $green;
+            }
+        }
+        @media (max-width: 520px){
+            width: 350px;
+        }
+    }
+}
 @import "custom.en.scss";
 // custom
 
