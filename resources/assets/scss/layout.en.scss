@@ -201,6 +201,7 @@ nav.burgher{
         .user-icons{
             display: flex!important;
         }
+
         .nav-open{
                 display: block;
                 width: 48px;
@@ -438,9 +439,164 @@ nav.burgher{
     span{
         font-size: 16px;
         color: $green;
+        @media (max-width: 1230px){
+            font-size: 12px;
+        }
     }
     @media (max-width: 991px){
         display: none!important;
+    }
+    .user-login{
+        cursor: pointer;
+        position: relative;
+        border: 1px solid #95989a;
+        border-radius: 50%;
+        width: 37px;
+        height: 37px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        i{
+            color: #FFF;
+        }
+        .login-hover{
+            transition: 0.3s;
+            visibility: hidden;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 3px;
+            position: absolute;
+            background-color: #FFF;
+            padding: 25px 40px;
+            top: 50px;
+            a{
+                border: none;
+                width: initial;
+                height: initial;
+            }
+            .login-hover-log{
+                background-color: $green;
+                border: 1px solid $green;
+                padding: 10px 22px;
+                padding-top: 12px;
+                font-size: 15px;
+                color: #FFF;
+                border-radius: 18px;
+                display: inline-block;
+                margin: 0;
+                margin-bottom: 30px;
+                &:hover{
+                    background-color: #FFF;
+                    color: $green;
+                }
+            }
+            .login-hover-reg{
+                margin-right: 0;
+                font-size: 14px;
+                color: #212121;
+                &:hover{
+                    color: $green;
+                }
+                @media (max-width: 1220px){
+                    display: block!important;
+                }
+            }
+            &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 8px solid transparent;
+                border-bottom: 8px solid #FFF;
+                border-right: 8px solid transparent;
+                border-left: 8px solid transparent;
+                margin-right: -8px;
+                right: 50%;
+                top: -16px;
+            }
+            @media (max-width: 1230px){
+                width: 200px;
+            }
+        }
+        &:hover{
+            border-color: $green;
+            i{
+                color: $green;
+            }
+            .login-hover{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    .user-menu{
+        position: relative;
+        margin-right: 10px;
+        .login-hover{
+            transition: 0.3s;
+            visibility: hidden;
+            opacity: 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 3px;
+            position: absolute;
+            background-color: #FFF;
+            top: 35px;
+            right: -50px;
+            width: 210px;
+            padding: 15px 0;
+            a{
+                border: none;
+                width: initial;
+                height: initial;
+                margin: 0!important;
+            }
+            .login-hover-reg{
+                padding: 10px 0;
+                padding-right: 10px;
+                border-radius: 0;
+                width: 100%;
+                font-size: 14px;
+                color: #212121;
+                text-align: right;
+                justify-content: flex-end;
+                &:hover{
+                    background-color: #E9E9E9;
+                }
+            }
+            &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 8px solid transparent;
+                border-bottom: 8px solid #FFF;
+                border-right: 8px solid transparent;
+                border-left: 8px solid transparent;
+                margin-right: -8px;
+                right: 50%;
+                top: -16px;
+            }
+        }
+        &:hover{
+            border-color: $green;
+            i{
+                color: $green;
+            }
+            .login-hover{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
     }
 }
 .wrapper-dropdown-3 {
@@ -522,7 +678,7 @@ nav.burgher{
     padding: 150px 0 80px 0;
     background-image: url(../images/news.png);
     background-position: bottom;
-    background-repeat-y: no-repeat;
+    background-repeat: no-repeat;
     h2{
         font-size: 50px;
         color: #FFF;
@@ -750,7 +906,7 @@ section.events{
     background-image: url(../images/news.png);
     background-position: bottom;
     background-size: 100%;
-    background-repeat-y: no-repeat;
+    background-repeat: no-repeat;
     .news{
         margin-top: 100px;
         h3{
@@ -1064,7 +1220,7 @@ footer{
 .pattern-cont{
     background-image: url(../images/news.png);
     background-position: bottom;
-    background-repeat-y: no-repeat;
+    background-repeat: no-repeat;
     background-size: 90%;
     padding-bottom: 150px;
 }
@@ -2671,7 +2827,7 @@ footer{
     position: relative;
     margin-top: 150px;
     background-image: url(../images/9mta-pattern.png);
-    background-repeat-y: no-repeat; 
+    background-repeat: no-repeat;
     background-position: bottom;
     .left-beers{
         img.our-beer{
