@@ -212,8 +212,31 @@
                             <a href="#!">CLEAR ALL</a>
                             <div class="continue d-flex flex-column text-right">
                                 <span>TOTAL : <span class="sum"></span> <span>GEL</span></span>
-                                <a href="#!">CONTINUE SHOPPING</a>
-                            </div>
+                                <a href="#!" data-toggle="modal" data-target="#myModal" >CONTINUE SHOPPING</a>
+                                <!-- modal -->
+                                <div class="modal fade shop-popup" id="myModal" role="dialog">
+                                    <div class="modal-dialog modal-md">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                              <a href="#!" class="login-cont">LOG IN AND CONTINUE</a>
+                                            </div>
+                                            <div class="modal-body">
+                                              <span class="buy-popup">BUY WITHOUT LOG IN</span>
+                                              <form>
+                                                  <input type="text" name="" placeholder="FIRST NAME">
+                                                  <input type="text" name="" placeholder="LAST NAME">
+                                                  <input type="text" name="" placeholder="MOBILE NUMBER">
+                                                  <input type="text" name="" placeholder="ADDRESS">
+                                                  <textarea placeholder="ADDITIONAL INFORMATION"></textarea>
+                                                  <input type="submit" name="" value="FINISH SHOPPING">
+                                              </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end modal -->
+                            </div>  
                         </div> 
                     </div>
                 </div>

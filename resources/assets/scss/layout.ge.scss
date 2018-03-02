@@ -2768,6 +2768,56 @@ footer{
                     font-size: 14px;
                 }
             }
+            .shop-popup{
+                .modal-header{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 50px 0;
+                    .login-cont{
+                        padding-top: 12px;
+                        margin: 0;
+                    }
+                    .close{
+                        cursor: pointer;
+                        position: absolute;
+                        top: 10px;
+                        right: 20px;
+                        &:hover{
+                            color: #db4042;
+                        }
+                    }
+                }
+                .modal-body{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .buy-popup{
+                        color: #1A1B1E;
+                        font-size: 24px;
+                        margin: 40px 0;
+                    }
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        input[type=submit]{
+                            color: #FFF;
+                            margin: 20px 0 40px 0;
+                            &:hover{
+                                color: $green;
+                            }
+                        }
+                        input, textarea{
+                            color: #1a1b1e;
+                            &:focus{
+                                border-color: $green;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
