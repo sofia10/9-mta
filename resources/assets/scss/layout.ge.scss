@@ -3167,8 +3167,8 @@ footer{
                 }
             }
             img{
-                max-width: 60px;
-                max-height: 220px;
+                /* max-width: 60px; */
+                max-height: 220px; 
             }
             .name-br{
                 margin-top: 15px;
@@ -3219,6 +3219,9 @@ footer{
                 }
                 .beer-9mta{
                     padding: 45px 0; 
+                    img {
+                        max-height: 300px;
+                    }
                 }
                 .slider-btm{
                     background-color: #DFDFDF;
@@ -3450,7 +3453,7 @@ footer{
                         .name-br{
                             margin-top: 18px;
                             color: #6E6E6E;
-                            font-size: 20px;
+                            font-size: 18px;
                         }
                         .ctgr-br{
                             margin-top: 5px;
