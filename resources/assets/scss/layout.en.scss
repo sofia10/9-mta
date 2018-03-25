@@ -2848,6 +2848,7 @@ footer{
 .beers-slider{
     height: 200px;
     background-color: #F1F1F1;
+    position: relative;
     .swiper-container {
         width: 100%;
         height: 100%;
@@ -2912,6 +2913,20 @@ footer{
     }
     .swiper-slide:hover .swiper-shadow-box{
         box-shadow: 1px 1px 4px #000!important;
+    }
+    .swiper-button-next{
+        right: 40px;
+        height: 40px;
+        bottom: 50%;
+        top: auto;
+        margin-top: 0;
+    }
+    .swiper-button-prev{
+        left: 40px;
+        height: 40px;
+        bottom: 50%;
+        top: auto;
+        margin-top: 0;
     }
 }
 .hide-title{
@@ -3189,12 +3204,18 @@ footer{
             }
         }
         .more-beer{
-            padding: 0;
+            padding: 0 40px;
             .swiper-button-prev, .swiper-button-next{
                 background-image: initial;
                 i{
                     color: $green;
                 }
+            }
+            .swiper-button-prev{
+                left: 0!important;
+            }
+            .swiper-button-next{
+                right: 0!important;
             }
             img{
                /*  max-width: 60px; */
@@ -3237,6 +3258,7 @@ footer{
 .second_slider{
     margin-bottom: 70px;
     padding: 0 150px;
+    position: relative;
     .s2{
         .swiper-wrapper{
             padding: 5px;
@@ -3280,6 +3302,12 @@ footer{
     }
     @media (max-width: 1200px){
         padding: 0;
+    }
+    .swiper-button-next{
+        right: 5%!important;
+    }
+    .swiper-button-prev{
+        left: 5%!important;
     }
 }
 .catalogue-sort{

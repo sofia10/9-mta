@@ -152,7 +152,7 @@
                     </div>
                 </div>
                 <div class="beers-slider d-flex align-items-center">
-                    <div class="container"
+                    <div class="container">
                      <!-- Swiper -->
                         <div class="swiper-container s1">
                             <div class="swiper-wrapper">
@@ -223,12 +223,12 @@
                             </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
+                        </div>
                         <div class="swiper-button-next">
                             <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
                         </div>
                         <div class="swiper-button-prev">
                             <i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>
-                        </div>
                         </div>
                         <!-- Swiper JS -->
                         </div>
@@ -361,12 +361,12 @@
                                     <!-- Add Pagination --> 
                                     <div class="swiper-pagination"></div>
                                     <!-- slider chevrons -->
-                                    <div class="swiper-button-next next-btn"  style="right: 0px;">
-                                        <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i> 
-                                    </div>
-                                    <div class="swiper-button-prev prev-btn" style="left: 0px;" >
-                                        <i class="fa fa-angle-left fa-3x" aria-hidden="true"></i> 
-                                    </div>
+                                </div>
+                                <div class="swiper-button-next next-btn"  style="right: 0px;">
+                                    <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+                                </div>
+                                <div class="swiper-button-prev prev-btn" style="left: 0px;" >
+                                    <i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>
                                 </div>
 
                             </div>
@@ -464,8 +464,8 @@
                 clickable: true,
                 },
                 navigation: {
-                nextEl: '.s1 .swiper-button-next',
-                prevEl: '.s1 .swiper-button-prev',
+                nextEl: '.beers-slider .swiper-button-next',
+                prevEl: '.beers-slider .swiper-button-prev',
                 }, 
 
                 breakpoints: {

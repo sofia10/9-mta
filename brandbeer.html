@@ -270,12 +270,12 @@
                                     </div>
                                     <!-- Add Pagination -->
                                     <div class="swiper-pagination"></div>
-                                    <div class="swiper-button-next">
-                                        <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="swiper-button-prev">
-                                        <i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>
-                                    </div>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>
                                 </div>
                         </div>
                     </div>
@@ -374,7 +374,7 @@
             });
         </script>
         <script>
-            var swiperS2 = new Swiper('.s2', {
+            var swiperS2 = new Swiper(' .s2', {
                 slidesPerView: 4,
                 spaceBetween: 30,
                 // autoplay: {
@@ -385,6 +385,11 @@
                     el: '.s2 .swiper-pagination',
                     clickable: true,
                 },
+                navigation: {
+                    nextEl: '.more-beer .swiper-button-next',
+                    prevEl: '.more-beer .swiper-button-prev',
+                },
+
                 breakpoints: {
                     991: {
                       slidesPerView: 2,
