@@ -364,51 +364,8 @@ span
 		font-family: $helvetica-roman;
 	}
 }
-.authorization-title{
+a.adress-edit{
 	span{
-		font-family: $josefin-bold;
+		font-family: $helvetica-roman;
 	}
-}
-.right-auth{
-    span{
-        font-family: $josefin-bold;
-    }
-    p{
-        font-family: $helvetica-roman;
-    }
-    .proceed{
-    	font-family: $josefin-bold;
-    }
-}
-.authorization{
-	form{
-		input,textarea{
-			font-family: $helvetica-roman;
-		}
-	}
-	tr{
-		.center{
-            span{
-                font-family: $helvetica-roman;
-            }
-        }
-	}
-}
-.checkout-left{
-    p{
-        font-family: $helvetica-roman;
-    }
-}
- .checkout-right{
-    span{
-        font-family: $josefin-bold;
-    }
-}
-.confirmed{
-    .confirmes-title{
-        font-family: $josefin-bold;
-    }
-    .back{
-    	font-family: $josefin-bold;
-    }
 }
